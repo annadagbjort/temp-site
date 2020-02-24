@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storm Rider</title>
+</head>
+
+<body>
+
+    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1417.32 1417.32">
+        <title>logo-prufa2</title>
+        <path class="logo" d="M689.57,528.07C462.62,532,395,710.15,395,832.13c0,131.71,88,293.73,309.37,293.73C923,1128.74,988.84,909,989.68,836,989.76,720.24,913.53,528.07,689.57,528.07Zm14.3,567.84c-181.78,0-268.56-150.2-267-244.22,0-69.08,48.55-254.29,255.85-255.53,187.8,1.71,254.85,170.49,254.85,247.92C951.22,907.91,885.66,1095.91,703.87,1095.91Z" />
+         <path class="logo" d="M679.25,1245.53l-30-1107.17L483.7,136.87l-18.39,6.9,4.51-67.57L506,77.73l334.77-.32,32.12-11.54L906.21,128l-18.69,16.53-43.79-5.06-117.55,1.15-5,1136.47Z" />
+        <path class="logo" d="M362.1,449.91l37.5-6.74,10.78-48.44s126.3,8.09,273.78,7.72c141.29-.36,280.8-9.18,280.8-9.18l10.71,40.55,41.38-2.3-11.5-144.16-39.08-2.3-8.8,42.54s-134.12,7.85-272,8.59c-146.73.78-276.83-5.54-276.83-5.54l-10.74-36.73-40.84-3.25Z" />
+        <path class="logo" d="M1109.21,997.6c-2.1,3.22-32.49,34.88-34.29,34.62C1043.64,940.5,921,818.35,846.65,912.3c-57.74,72.93,69.91,183.78,144.91,207.1-3.57,7.81-28.58,42.74-30.56,44.1-62.09,9.32-286.22-168.37-151.64-303S1094.27,893,1109.21,997.6Z" />
+        <path class="logo" d="M585.6,919.14l38.21,41.4L485.35,1120.17,539,1180.26l-72,71.25L298.74,1074.16l71.81-71.54L430.92,1063Z" />
+
+    </svg>
+
+<h1>Síðan opnar í janúar 2020!</h1>
+<p>Endilega sendu okkur email á <a href="mailto:stormrider@stormrider.is" class="link"><b>stormrider@stormrider.is</b> </a> </p><p>eða hringdu í síma <a href="tel:+3548978894" class="link"><b>897-8894</b> </a> (Styrmir) </p>
+
+
+</body></html>
+<style>
+    body {
+    background: lightgray;
+    }
+    h1{
+        font-family: monospace;
+        text-align: center;
+    }
+
+    p {
+        font-family: monospace;
+        text-align: center;
+        font-size: 18px;
+    }
+    .link {
+           text-decoration: none;
+        color: black;
+    }
+
+    svg {
+        width: 70vh;
+        height: 70vh;
+        display: block;
+        margin: auto;
+    }
+
+        .logo {
+        fill: none;
+        stroke: none;
+        stroke-width: 2;
+        text-align: center;
+            display:list-item;
+/*
+
+        transition: 3s linear;
+*/
+    }
+
+
+
+.draw {
+   animation: draw 1s linear forwards;
+}
+
+@keyframes draw {
+    25% {
+        fill: #a5a4a4;
+    }
+    50% {
+/*         stroke-dashoffset: 0;*/
+        fill: #787878;
+    }
+    75%{
+/*    stroke-dashoffset: 0;*/
+    fill: #444545;
+    stroke-dasharray: 3300;
+    stroke-dashoffset: 3300;
+    }
+    100%{
+    stroke-dashoffset: 0;
+    fill: #111111;
+    }
+}
+    #storm {
+
+    }
+
+</style>
+
+<script>
+    const lines = document.querySelectorAll(".line");
+
+    const logo = document.querySelectorAll(".logo");
+
+    window.addEventListener("load", start);
+
+    function start() {
+        lines.forEach(drawThis);
+    }
+
+    function drawThis(line, i) {
+        setTimeout(function() {
+            line.classList.add("draw");
+        }, i * 300);
+    }
+
+
+        function start() {
+        logo.forEach(drawThis);
+    }
+
+    function drawThis(logo, i) {
+        setTimeout(function() {
+            logo.classList.add("draw");
+        }, i * 300);
+    }
+
+
+</script>
